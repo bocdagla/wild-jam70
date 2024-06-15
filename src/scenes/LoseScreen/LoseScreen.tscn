@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk8ljee14ou7s"]
+
+[ext_resource type="PackedScene" uid="uid://cp3p3kqcjh0me" path="res://addons/maaacks_game_template/extras/scenes/LoseScreen/LoseScreen.tscn" id="1_6ohpn"]
+[ext_resource type="Script" path="res://addons/maaacks_game_template/examples/scenes/LoseScreen/LoseScreen.gd" id="2_hrqev"]
+
+[node name="LoseScreen" instance=ExtResource("1_6ohpn")]
+script = ExtResource("2_hrqev")
+main_menu_scene = "res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/MainMenuWithAnimations.tscn"

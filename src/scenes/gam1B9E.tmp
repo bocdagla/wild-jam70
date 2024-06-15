@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cohpydgbvkuna"]
+
+[ext_resource type="PackedScene" uid="uid://bdh0gh5dw180o" path="res://prefabs/pause/pause_menu.tscn" id="1_khjpo"]
+[ext_resource type="Script" path="res://scripts/input/meta_gameplay_input.gd" id="2_leaqq"]
+
+[node name="Gameplay" type="Node3D"]
+
+[node name="MetaGameplayInput" type="Node" parent="." node_paths=PackedStringArray("pause_menu")]
+script = ExtResource("2_leaqq")
+pause_menu = NodePath("../PauseMenu")
+
+[node name="PauseMenu" parent="." instance=ExtResource("1_khjpo")]
