@@ -1,10 +1,10 @@
 [gd_resource type="Theme" load_steps=7 format=3 uid="uid://dajx1ty4mxj6b"]
 
-[ext_resource type="StyleBox" uid="uid://b5cany2n642yy" path="res://art/themes/button_normal.tres" id="1_2eklx"]
-[ext_resource type="StyleBox" uid="uid://bh1l3ryj3mohu" path="res://art/themes/button_pressed.tres" id="1_n2cdq"]
-[ext_resource type="StyleBox" uid="uid://c6lm28vjjdxr7" path="res://art/themes/button_disabled.tres" id="1_pgeaq"]
-[ext_resource type="StyleBox" uid="uid://bwhty2ta4d074" path="res://art/themes/button_hover.tres" id="1_u7ofj"]
-[ext_resource type="StyleBox" uid="uid://n2lc84dt7o5q" path="res://art/themes/button_focus.tres" id="2_20nng"]
+[ext_resource type="StyleBox" uid="uid://b5cany2n642yy" path="res://assets/themes/button_normal.tres" id="1_2eklx"]
+[ext_resource type="StyleBox" uid="uid://bh1l3ryj3mohu" path="res://assets/themes/button_pressed.tres" id="1_n2cdq"]
+[ext_resource type="StyleBox" uid="uid://c6lm28vjjdxr7" path="res://assets/themes/button_disabled.tres" id="1_pgeaq"]
+[ext_resource type="StyleBox" uid="uid://bwhty2ta4d074" path="res://assets/themes/button_hover.tres" id="1_u7ofj"]
+[ext_resource type="StyleBox" uid="uid://n2lc84dt7o5q" path="res://assets/themes/button_focus.tres" id="2_20nng"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8awh7"]
 bg_color = Color(0.414, 0.69, 0.506, 1)
