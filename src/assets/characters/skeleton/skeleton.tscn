@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3 uid="uid://046iv1tcuu10"]
+
+[ext_resource type="Texture2D" uid="uid://cyn06tjvb7j02" path="res://assets/external/Minifantasy_Creatures_Assets/Undead/Skeleton/SkeletonIdle.png" id="1_pug0i"]
+[ext_resource type="Script" path="res://assets/characters/skeleton/skeleton.gd" id="1_x3t4b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0bdhl"]
+size = Vector2(8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4p2rv"]
+atlas = ExtResource("1_pug0i")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1357"]
+atlas = ExtResource("1_pug0i")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6vhs"]
+atlas = ExtResource("1_pug0i")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tehsm"]
+atlas = ExtResource("1_pug0i")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_awvsu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4p2rv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1357")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g6vhs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tehsm")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}]
+
+[node name="Skeleton" type="Node2D"]
+script = ExtResource("1_x3t4b")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_0bdhl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_awvsu")
+animation = &"idle"
+frame = 1
+
+[node name="Raycasts" type="Node2D" parent="."]
+position = Vector2(4, 4)
+
+[node name="RayCast2DDown" type="RayCast2D" parent="Raycasts"]
+target_position = Vector2(0, 8)
+
+[node name="RayCast2DUp" type="RayCast2D" parent="Raycasts"]
+target_position = Vector2(0, -8)
+
+[node name="RayCast2DRight" type="RayCast2D" parent="Raycasts"]
+target_position = Vector2(8, 0)
+
+[node name="RayCast2DLeft" type="RayCast2D" parent="Raycasts"]
+target_position = Vector2(-8, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

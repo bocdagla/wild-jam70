@@ -8,11 +8,11 @@ Person 2
 
 
 ## Sourced / Unaffiliated
-### Asset Type
-#### Use Case
-Author: [Name]()
-Source: [Domain : webpage.html]()
-License: [License]()
+### Assets
+#### Characters and tilesets
+Author: [Krishna Palacio]()
+Source: [Domain : itch.io](https://krishna-palacio.itch.io/)
+License: [Free for non-commercial]()
 
 ### Godot Wild Jam Logos
 Author: [Dawk](https://coreyaroberts.com/)
