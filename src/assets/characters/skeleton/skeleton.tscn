@@ -57,19 +57,4 @@ sprite_frames = SubResource("SpriteFrames_awvsu")
 animation = &"idle"
 frame = 1
 
-[node name="Raycasts" type="Node2D" parent="."]
-position = Vector2(4, 4)
-
-[node name="RayCast2DDown" type="RayCast2D" parent="Raycasts"]
-target_position = Vector2(0, 8)
-
-[node name="RayCast2DUp" type="RayCast2D" parent="Raycasts"]
-target_position = Vector2(0, -8)
-
-[node name="RayCast2DRight" type="RayCast2D" parent="Raycasts"]
-target_position = Vector2(8, 0)
-
-[node name="RayCast2DLeft" type="RayCast2D" parent="Raycasts"]
-target_position = Vector2(-8, 0)
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
