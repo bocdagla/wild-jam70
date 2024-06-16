@@ -9,6 +9,8 @@ const OBJECTS_LAYER = 1
 @export var strength: int = 1
 @export var can_break: bool = false
 
+@export var controlling: bool = false
+
 var tile_size = 8
 var inputs = {"right": Vector2i.RIGHT,
 			"left": Vector2i.LEFT,
@@ -20,9 +22,10 @@ func _ready():
 	animated_sprite.play("idle")
 
 func _unhandled_input(event):
-	for dir in inputs.keys():
-		if event.is_action_pressed(dir):
-			move(dir)
+	if controlling:
+		for dir in inputs.keys():
+			if event.is_action_pressed(dir):
+				move(dir)
 
 func get_tile(coord, layers = [1, 0]):
 	var parent = get_parent() as TileMap

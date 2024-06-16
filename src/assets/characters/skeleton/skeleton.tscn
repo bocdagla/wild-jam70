@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://046iv1tcuu10"]
 
+[ext_resource type="Script" path="res://assets/scripts/character_controller.gd" id="1_7ji86"]
 [ext_resource type="Texture2D" uid="uid://cyn06tjvb7j02" path="res://assets/external/Minifantasy_Creatures_Assets/Undead/Skeleton/SkeletonIdle.png" id="1_pug0i"]
-[ext_resource type="Script" path="res://assets/characters/skeleton/skeleton.gd" id="1_x3t4b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0bdhl"]
 size = Vector2(8, 8)
@@ -43,7 +43,7 @@ animations = [{
 }]
 
 [node name="Skeleton" type="Node2D"]
-script = ExtResource("1_x3t4b")
+script = ExtResource("1_7ji86")
 
 [node name="Area2D" type="Area2D" parent="."]
 
