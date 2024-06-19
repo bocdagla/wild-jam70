@@ -16,6 +16,4 @@ layer_1/tile_data = PackedInt32Array(196611, 851972, 1, 196612, 1638404, 3, 1310
 
 [node name="Skeleton" parent="TileMap" instance=ExtResource("2_jmpvl")]
 position = Vector2(16, 56)
-strength = 3
-can_break = true
 controlling = true
