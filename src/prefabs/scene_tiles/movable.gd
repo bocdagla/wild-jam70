@@ -32,7 +32,7 @@ func push_and_move(direction: Vector2, strength: int) -> bool:
 
 	var next_tile = _get_ground(next_cell_coords);
 	if !_is_valid_tile_for_moving(next_tile):
-		if _moved_against_collision(null):
+		if !_moved_against_collision(null):
 			blocked.emit();
 			return false;
 
