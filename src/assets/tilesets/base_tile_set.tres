@@ -1,9 +1,14 @@
-[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://c1meofkq8kg4k"]
+[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://c1meofkq8kg4k"]
 
-[ext_resource type="Texture2D" uid="uid://crya1qr167p5" path="res://assets/external/Minifantasy_Dungeon_Assets/Tileset/Tileset.png" id="1_x87f0"]
-[ext_resource type="Texture2D" uid="uid://bfpttr4aq3mn8" path="res://assets/external/Minifantasy_ForgottenPlains_Assets/Tileset/Minifantasy_ForgottenPlainsTiles.png" id="2_0n25a"]
-[ext_resource type="Texture2D" uid="uid://d3eqjqsas1sai" path="res://assets/external/Minifantasy_Dungeon_Assets/Props/Props.png" id="3_xmh02"]
-[ext_resource type="Texture2D" uid="uid://b1f880dsv5nn5" path="res://assets/external/Minifantasy_ForgottenPlains_Assets/props/Minifantasy_ForgottenPlainsProps.png" id="4_v2dc8"]
+[ext_resource type="PackedScene" uid="uid://b1ahblfxqevbo" path="res://prefabs/scene_tiles/box.tscn" id="1_fo4in"]
+[ext_resource type="Texture2D" uid="uid://qadx1jsslg04" path="res://assets/external/Minifantasy_Dungeon_Assets/Tileset/Tileset.png" id="1_x87f0"]
+[ext_resource type="Texture2D" uid="uid://dthvjkdhks2w8" path="res://assets/external/Minifantasy_ForgottenPlains_Assets/Tileset/Minifantasy_ForgottenPlainsTiles.png" id="2_0n25a"]
+[ext_resource type="Texture2D" uid="uid://c06hex2w0cp5a" path="res://assets/external/Minifantasy_Dungeon_Assets/Props/Props.png" id="3_xmh02"]
+[ext_resource type="Texture2D" uid="uid://cnplu3ye7b2pc" path="res://assets/external/Minifantasy_ForgottenPlains_Assets/props/Minifantasy_ForgottenPlainsProps.png" id="4_v2dc8"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_dw2j3"]
+resource_name = "Objects"
+scenes/1/scene = ExtResource("1_fo4in")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n3q21"]
 texture = ExtResource("1_x87f0")
@@ -2874,3 +2879,4 @@ sources/2 = SubResource("TileSetAtlasSource_n3q21")
 sources/3 = SubResource("TileSetAtlasSource_1q3ci")
 sources/4 = SubResource("TileSetAtlasSource_22h83")
 sources/5 = SubResource("TileSetAtlasSource_hb1yo")
+sources/0 = SubResource("TileSetScenesCollectionSource_dw2j3")

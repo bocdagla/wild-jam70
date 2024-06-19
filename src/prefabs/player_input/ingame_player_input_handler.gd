@@ -1,3 +1,4 @@
+class_name IngamePlayerInputHandler;
 extends Node
 
 @export var available_chars: Array[Character];
